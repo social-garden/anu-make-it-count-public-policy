@@ -7,6 +7,7 @@ class Header extends Component {
     constructor(props) {
       super(props);
 
+      /* Bundle dynamic UTM source in to static form string */
       var utm_code = this.getUrlParamater('utm_code');
       var utm_hidden_form_field = '<input id="utm_source_hidden" type="hidden" value="" name="UTMSOURCE" class="" id="mce-UTMSOURCE"/>'
 
@@ -58,12 +59,6 @@ class Header extends Component {
               </div>
           </header>
         )
-    }
-
-    /* Component mounted */
-    componentDidMount() {
-      alert('Page loaded - component rendered')
-      console.log(this.getUrlParamater('utm_code'));
     }
 
     /* Get URL Paramaters */
