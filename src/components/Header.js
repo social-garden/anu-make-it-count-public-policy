@@ -8,11 +8,16 @@ class Header extends Component {
       super(props);
 
       /* Bundle dynamic UTM source in to static form string */
-      var utm_code = this.getUrlParamater('utm_code');
-      var utm_hidden_form_field = '<input id="utm_source_hidden" type="hidden" value="' + utm_code + '" name="UTMSOURCE" class="" id="mce-UTMSOURCE"/>'
+      var utm_hidden_form_fields = "";
+      // UTM Source
+      var utm_source = this.getUrlParamater('utm_source')
+      utm_hidden_form_fields += '<input id="utm_source_hidden" type="hidden" value="' + utm_source + '" name="UTMSOURCE" class="" id="mce-UTMSOURCE"/>'
+      // UTM Campaipgn
+      var utm_campaign = this.getUrlParamater('utm_campaign')
+      utm_hidden_form_fields += '<input id="utm_campaign_hidden" type="hidden" value="' + utm_campaign + '" name="UTMCAMP" class="" id="mce-UTMCAMP"/>'
 
       this.state = {
-        form: FORM.replace('</form>', utm_hidden_form_field + '</form>')
+        form: FORM.replace('</form>', utm_hidden_form_fields + '</form>')
       }
     }
 
@@ -71,7 +76,7 @@ class Header extends Component {
       for (i = 0; i < sURLVariables.length; i++) {
         sParameterName = sURLVariables[i].split("=");
         if (sParameterName[0] === sParam) {
-          return sParameterName[1] === undefined ? true : sParameterName[1];
+          return sParameterName[1] === undefined ? "" : sParameterName[1];
         }
       }
     }
