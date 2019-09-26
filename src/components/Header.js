@@ -9,7 +9,7 @@ class Header extends Component {
 
       /* Bundle dynamic UTM source in to static form string */
       var utm_code = this.getUrlParamater('utm_code');
-      var utm_hidden_form_field = '<input id="utm_source_hidden" type="hidden" value="" name="UTMSOURCE" class="" id="mce-UTMSOURCE"/>'
+      var utm_hidden_form_field = '<input id="utm_source_hidden" type="hidden" value="' + utm_code + '" name="UTMSOURCE" class="" id="mce-UTMSOURCE"/>'
 
       this.state = {
         form: FORM.replace('</form>', utm_hidden_form_field + '</form>')
