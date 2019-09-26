@@ -1,0 +1,510 @@
+
+header.anu-header {
+    position: relative;
+    background: url(../../../../public/images/header-back.png);
+    width: 100%;
+}
+
+.tagline {
+    color: white;
+    line-height: 1.2;
+    z-index: 24;
+    font-weight: 600;
+}
+
+.bottom {
+    position: relative;
+}
+.tagline-logo {
+    display: inline-block;
+    width:50%;
+    vertical-align: middle;
+}
+.anu-logo {
+    float: right;
+    z-index: 23;
+
+}
+.registrationButton{
+    background-color: #f37c4c;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f37c4c;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    line-height: 1.667;
+    border-radius: 2px;
+    height: 45px;
+    font-size: 17px;
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
+.top {
+    background-color: rgb(37, 36, 37);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.23);
+    z-index: 22;
+    height: 4.6rem;
+}
+.middle {
+    z-index:10;
+    float:right;
+}
+.count {
+    overflow: hidden;
+    height:50%;
+    position: relative;
+}
+.count p {
+      color:rgb(77, 77, 79);
+      margin: 0px;
+      line-height: 1;
+      -moz-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+      -webkit-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+      -ms-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+}
+.middle-wrapper {
+    position: absolute;
+    bottom: 0px;
+}
+.through {
+    height:50%;
+}
+
+.formContainer p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+
+.notice p{
+    font-size:1rem;
+    font-weight:200;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.hero {
+    width: 100%;
+    height:100%;
+}
+
+.middle {
+    z-index:70;
+}
+.middle-area {
+    position: absolute;
+}
+.bottom p {
+    margin-top: 0px;
+    color: white;
+    margin-bottom: 0px;
+    
+}
+
+
+.through {
+    background-color: rgb(77, 77, 79);
+    box-shadow: 0px 15px 8px 0px rgba(0, 0, 0, 0.23);
+    height: 60%;
+    position: relative;
+}
+.count {
+    background: white;
+}
+.through p {
+    margin: 0px;
+    line-height: 1.2;
+      -moz-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+      -webkit-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+      -ms-transform: matrix( 0.86451194756436,0,0,0.889686392158,0,0);
+    color: white;
+}
+
+
+.scott {
+    position: absolute;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+
+.hero {
+    background-color: rgb(96, 96, 96);
+    box-shadow: 0px 28px 25.65px 1.35px rgba(0, 0, 0, 0.39);
+}
+
+.economic {
+    position: absolute;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    text-align: left;
+}
+
+@media (max-width: 459px) {
+    .tagline {
+        margin-left: 15px;
+        margin-right:15px;
+        font-size:0.5rem;
+    }
+    .tagline-logo.tag-p {
+        margin-top: 15px;
+    }
+    .anu-logo {
+        width: 50%;
+        margin-top: 15px;
+
+    }
+    .middle-area{
+        width:25%;
+    }
+    .middle {
+        width: 85%;
+        margin-top:80px;
+        height:120px;
+    }
+    .top {
+        height: 2.75rem;
+        width:100%;
+        /* margin-right:20px; */
+    }
+    .count p {
+        font-size:18px;
+    }
+
+    .through p {
+        font-size:13px;
+    }
+    .bottom {
+        height:150px;
+        width:100%;
+    }
+    .formContainer p{
+        font-size:10px;
+    }
+    .notice p {
+        font-size:10px !important;
+    }
+    .registrationButton {
+        width:100%;
+    }
+
+    .economic {
+        top: 20%;
+        left: 55%;
+        width: 43%;
+        line-height: 0.6rem;
+    }
+
+    .economic p {
+        font-size: 8px;
+
+    }
+    .scott {
+        width: 31%;
+        left: 67%;
+        top: 71%;
+    }
+    .scott p {
+        font-size: 7px;
+    }
+    img.hero-img {
+        width: 70%;
+        margin-left: -10px;
+    }
+
+
+}
+
+@media (min-width:460px) and (max-width:767px){
+    .top {
+        height:3.5rem;
+        margin-left: 0px;
+    }
+    .tagline {
+        margin-left: 25px;
+        margin-right:25px;
+        font-size:0.7rem;
+    }
+    .tagline-logo.tag-p {
+        margin-top: 15px;
+    }
+    .anu-logo {
+        width: 50%;
+        margin-top: 15px;
+
+    }
+    .middle-area{
+        width:25%;
+    }
+    .middle {
+        width: 75%;
+        margin-top:120px;
+        height:140px;
+    }
+    .bottom {
+        height:200px;
+        width:100%;
+    }
+    .count p {
+        font-size:20px;
+    }
+    .scott {
+        width: 26%;
+        left: 69%;
+        top: 70%;
+        font-size: 8px;
+    }
+    .economic {
+        top: 25%;
+        left: 58%;
+        width: 40%;
+    }
+
+    .economic p {
+        font-size: 10px;
+
+    }
+
+    img.hero-img {
+        width: 70%;
+        margin-left:-10px;
+    }
+    .registrationButton {
+        width:100%;
+    }
+
+
+
+}
+
+
+
+@media (min-width: 768px) {
+    .top {
+        height:4.5rem;
+        margin-left: 0px;
+    }
+    .tagline {
+        margin-left: 35px;
+        margin-right:35px;
+        font-size:1rem;
+    }
+    .tagline-logo.tag-p {
+        margin-top: 15px;
+    }
+    .anu-logo {
+        width: 30%;
+        margin-top: 15px;
+
+    }
+    .middle-area{
+        width:20%;
+    }
+    .middle {
+        width: 85%;
+        margin-top:150px;
+        height:180px;
+    }
+
+    .bottom {
+        height:250px;
+        width:100%;
+        /* margin-left:130px; */
+    }
+
+    .through {
+        position: relative;
+    }
+    .through p {
+        font-size:20px;
+    }
+    .count p{
+        font-size:25px;
+    }
+    .scott {
+        width: 26%;
+        left: 69%;
+        top: 70%;
+        font-size: 13px;
+    }
+    .economic {
+        top: 20%;
+        left: 42%;
+        width: 55%;
+    }
+
+    .economic p {
+        font-size: 18px;
+
+    }
+
+    img.hero-img {
+        width: 50%;
+        margin-left: -10px;
+    }
+    .registrationButton{
+        width:30%;
+        height:45px;
+    }
+
+
+   
+
+
+}
+
+@media (min-width: 992px) {
+    .top {
+        height:4.5rem;
+        margin-left: 0px;
+    }
+    .tagline {
+        margin-left: 35px;
+        margin-right:35px;
+        font-size:1rem;
+    }
+    .tagline-logo.tag-p {
+        margin-top: 15px;
+    }
+    .anu-logo {
+        width: 30%;
+        margin-top: 15px;
+
+    }
+    .middle-area{
+        width:20%;
+    }
+    .middle {
+        width: 85%;
+        margin-top:150px;
+        height:330px;
+    }
+    
+    .bottom {
+        height:400px;
+    }
+    
+    .scott {
+        top: 75%;
+        z-index: 100;
+        width: 25%;
+        font-size: 17px;
+    }
+    
+    .economic {
+    left: 50%;
+    top: 30%;
+    width: 50%;
+    }
+
+    .economic p {
+        font-size: 1.2rem;
+    }
+    
+    .registrationButton{
+        width:30%;
+        height:45px;
+    }
+    
+    .through p {
+        font-size:32px;
+    }
+    .count p{
+        font-size:45px;
+    }
+    img.hero-img {
+        width: 60%;
+        margin-left: -10px;
+    }
+    
+}
+    
+    
+    
+
+
+@media (min-width: 1200px) {
+.top {
+        height:4.5rem;
+        margin-left: 0px;
+}
+
+.tagline {
+    margin-left: 35px;
+    margin-right:35px;
+    font-size:1rem;
+}
+
+.anu-logo {
+    width: 25%;
+    margin-top: 15px;
+
+}
+
+.bottom {
+    height:400px;
+}
+
+.scott {
+    top: 68%;
+    z-index: 100;
+    width: 250px;
+    font-size: 19px;
+    left: 66%;
+}
+
+.economic {
+    top: 25%;
+    left: 44%;
+    width: 52%;
+}
+
+.middle-area{
+    width:40%;
+}
+.middle {
+    width:40%;
+    margin-top:150px;
+    height:330px;
+}
+
+.economic p {
+    font-size: 25px;
+    width: 100%;
+}
+
+.through p {
+    font-size:43px;
+}
+.count p{
+    font-size:60px;
+}
+
+img.hero-img {
+    width: 45%;
+    margin-left: 35px;
+}
+.tagline-logo.tag-p {
+    margin-top: 10px;
+}
+.registrationButton{
+    width:30%;
+    height:45px;
+}
+
+
+}
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+    .middle-area{
+        width:20%;
+    }
+    .middle {
+        width:85%;
+        margin-top:150px;
+        height:330px;
+    }
+
+}
+
+
